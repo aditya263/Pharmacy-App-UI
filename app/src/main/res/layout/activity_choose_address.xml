@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    tools:context=".ChooseAddress">
+
+    <LinearLayout
+        android:id="@+id/linearPinBox"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/etPincode"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Enter pin code"
+            android:background="@drawable/border"
+            android:padding="@dimen/_8sdp"
+            android:maxLength="6"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInvalidPincode"
+        android:visibility="gone"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearPinBox"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="Please enter a valid pincode"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="#F44336"/>
+
+    <TextView
+        android:id="@+id/txtCurrentLocation"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_13sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_centerHorizontal="true"
+        android:text="Select Current Location"
+        android:drawableTint="@color/colorPrimary"
+        android:layout_below="@+id/txtInvalidPincode"
+        android:drawableStart="@drawable/ic_baseline_my_location_24"
+        android:drawablePadding="@dimen/_8sdp" />
+
+    <LinearLayout
+        android:id="@+id/below"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/border"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#86CFBDBD"
+        android:padding="@dimen/_5sdp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/scooter"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serving more than 1,000 towns and cities in India."
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/layoutAddress"
+        android:text="Saved Addresses"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutAddress"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/below"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAddNewAddress"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/dotted"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                android:tint="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New \n Address"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

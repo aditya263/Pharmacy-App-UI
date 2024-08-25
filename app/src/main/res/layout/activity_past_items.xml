@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".PastItems">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="#86E1F0FA">
+
+        <ImageView
+            android:id="@+id/imglocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_location_on_24"/>
+
+        <TextView
+            android:id="@+id/txtdeliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deliver To"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/imglocation"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="800001 Patna"
+            android:textColor="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:layout_below="@+id/txtdeliver"
+            android:layout_toEndOf="@+id/imglocation"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_8sdp"/>
+
+        <TextView
+            android:id="@+id/txtchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_below="@+id/txtdeliver"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgMedicine"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/medicine_one"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtMedicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paracetamol 200mg Tablet"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 TABLET(S) IN STRIP"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_below="@+id/txtMedicineName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtMedicineCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By WALLACE PHARMACEUTICALS"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_below="@+id/txtcount"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_8sdp"/>
+
+        <LinearLayout
+            android:id="@+id/txtPrescription"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@+id/txtMedicineCompany"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:background="@drawable/background_text"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/medicine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescription Available"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹58.01"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_below="@+id/txtPrescription"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/txtActualCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/actualCost"
+            android:layout_toEndOf="@+id/txtCost"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/txtPrescription"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/dicount_one"
+            android:layout_toEndOf="@+id/txtActualCost"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/txtPrescription"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <Button
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:text="Add To Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/txtCost"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgMedicine01"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/medicine_two"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtMedicineName01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolo 500mg Tablet"
+            android:layout_toEndOf="@+id/imgMedicine01"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtcount01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 TABLET(S) IN STRIP"
+            android:layout_toEndOf="@+id/imgMedicine01"
+            android:layout_below="@+id/txtMedicineName01"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtMedicineCompany01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By TORRENT PHARMACEUTICALS LTD"
+            android:layout_toEndOf="@+id/imgMedicine01"
+            android:layout_below="@+id/txtcount01"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_8sdp"/>
+
+        <LinearLayout
+            android:id="@+id/txtPrescription01"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@+id/txtMedicineCompany01"
+            android:layout_toEndOf="@+id/imgMedicine01"
+            android:background="@drawable/background_text"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/medicine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescription Available"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCost01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹58.01"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/imgMedicine01"
+            android:layout_below="@+id/txtPrescription01"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/txtActualCost01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/actualCost"
+            android:layout_toEndOf="@+id/txtCost01"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/txtPrescription01"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/dicount_one"
+            android:layout_toEndOf="@+id/txtActualCost01"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/txtPrescription01"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <!--<Button
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:text="Add To Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/imgMedicine01"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/txtCost01"/>-->
+
+        <RelativeLayout
+            android:layout_below="@+id/txtCost01"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_95sdp"
+            android:layout_toEndOf="@+id/imgMedicine01"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:background="@drawable/spinner_border"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

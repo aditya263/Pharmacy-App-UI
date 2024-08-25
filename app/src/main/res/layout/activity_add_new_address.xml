@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewAddress">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Deliver To"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="e.g. Harry"
+            android:background="@drawable/border"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Mobile Number"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="e.g. 9876543210"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@drawable/border"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="For all delivery related communication"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Pincode"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="e.g. 400072"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/border"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="House Number and Building"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="e.g. Oberoi heights"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/border"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Street Name"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="e.g. Back street"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/border"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Address Type"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_280sdp"
+            android:gravity="center_horizontal"
+            android:layout_height="@dimen/_50sdp">
+
+            <LinearLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_baseline_home_24"
+                    android:tint="@color/colorPrimary"
+                    android:background="@drawable/circle_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_5sdp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_baseline_work_24"
+                    android:tint="@color/colorPrimary"
+                    android:background="@drawable/circle_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_5sdp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_baseline_not_listed_location_24"
+                    android:tint="@color/colorPrimary"
+                    android:background="@drawable/circle_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_5sdp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

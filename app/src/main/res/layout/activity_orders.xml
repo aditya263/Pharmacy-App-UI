@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    tools:context=".Orders">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:background="@drawable/spinner_border"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:id="@+id/imgMedicine"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/medicine"/>
+
+        <TextView
+            android:id="@+id/txtCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joe"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹500.00"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/txtOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Delivered"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtCustomerName"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/txtMedicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceclo Plus"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtOrderStatus"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"/>
+        <TextView
+            android:id="@+id/txtMedicineName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceclofenac 100mg"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtMedicineName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"/>
+        <TextView
+            android:id="@+id/txtMedicineName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paracetamol"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtMedicineName1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/txtDeliveryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered on 05 July"
+            android:layout_toEndOf="@+id/imgMedicine"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtMedicineName2"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+        <Button
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:text="Reorder"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/txtDeliveryDate"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:id="@+id/imgMedicine1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/medicine"/>
+
+        <TextView
+            android:id="@+id/txtCustomerName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aleona"
+            android:layout_toEndOf="@+id/imgMedicine1"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹1200.00"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/txtOrderStatus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Delivered"
+            android:layout_toEndOf="@+id/imgMedicine1"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtCustomerName1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/txtMedicineName01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naproxen"
+            android:layout_toEndOf="@+id/imgMedicine1"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtOrderStatus1"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"/>
+        <TextView
+            android:id="@+id/txtMedicineName02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceclofenac 100mg"
+            android:layout_toEndOf="@+id/imgMedicine1"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtMedicineName01"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"/>
+        <TextView
+            android:id="@+id/txtMedicineName03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diclofenac"
+            android:layout_toEndOf="@+id/imgMedicine1"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtMedicineName02"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/txtDeliveryDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered on 12 June"
+            android:layout_toEndOf="@+id/imgMedicine1"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_below="@+id/txtMedicineName03"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+        <Button
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:text="Reorder"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/txtDeliveryDate1"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

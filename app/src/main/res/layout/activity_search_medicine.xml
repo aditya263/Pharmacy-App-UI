@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SearchView
+        android:id="@+id/search"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false">
+
+        <requestFocus />
+    </SearchView>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Frequently Searched Items"
+        android:layout_below="@+id/search"  />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/nameLabel"
+        android:divider="@color/transparent"/>
+
+</RelativeLayout>

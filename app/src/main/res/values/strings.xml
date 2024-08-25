@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pharmacy App</string>
+
+    <string name="search">Search medicines and health products</string>
+    <string name="exampleMedicine">e.g. Telma, Colgate or Ecosprin</string>
+    <string name="medicine">Medicines</string>
+    <string name="appointment">Appointments</string>
+    <string name="pastorder">9 Past Order</string>
+    <string name="orderprescription">Order via Prescription</string>
+    <string name="dontHavePrescription">Don\'t Have a Prescription?</string>
+    <string name="reminder">Dosage Reminder</string>
+    <string name="startchat">Start a new consultation</string>
+    <string name="askDoctor">Need Help</string>
+    <string name="pastitems">12 Previosuly \n Bought Items</string>
+    <string name="typeMessage">Type a message... </string>
+
+    <string name="txtaddmedicine">&#8226; Add medicines to your cart</string>
+    <string name="txtfreeDoctor">&#8226; Select Free Doctor Consultation at checkout</string>
+
+    <string name="actualCost"><strike> ₹68.25 </strike></string>
+</resources>

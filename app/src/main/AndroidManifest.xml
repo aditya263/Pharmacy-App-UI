@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.aditya.pharmacyapp.CartActivity"
+            android:theme="@style/AppThemecustom"/>
+        <activity android:name="com.aditya.pharmacyapp.NotificationActivity"
+            android:theme="@style/AppThemecustom"/>
+        <activity
+            android:name="com.aditya.pharmacyapp.SetReminder"
+            android:theme="@style/AppThemecustom"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.aditya.pharmacyapp.DosageReminder"
+            android:theme="@style/AppThemecustom" />
+        <activity
+            android:name="com.aditya.pharmacyapp.Appointment"
+            android:theme="@style/AppThemecustom"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.aditya.pharmacyapp.AddNewAddress"
+            android:theme="@style/AppThemecustom"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.aditya.pharmacyapp.ChooseAddress"
+            android:theme="@style/AppThemecustom" />
+        <activity android:name="com.aditya.pharmacyapp.SearchMedicine" />
+        <activity
+            android:name="com.aditya.pharmacyapp.OrderMedicines"
+            android:theme="@style/AppThemecustom" />
+        <activity
+            android:name="com.aditya.pharmacyapp.PastItems"
+            android:theme="@style/AppThemecustom" />
+        <activity
+            android:name="com.aditya.pharmacyapp.Orders"
+            android:theme="@style/AppThemecustom" />
+        <activity
+            android:name="com.aditya.pharmacyapp.MessageActivity"
+            android:theme="@style/AppThemecustom"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.aditya.pharmacyapp.MainActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
